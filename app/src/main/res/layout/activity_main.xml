@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Our Team"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/imgone"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/dd"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/imgtwo"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        />
+
+    <ImageView
+        android:id="@+id/imgtwo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/aa"
+        app:layout_constraintLeft_toRightOf="@+id/imgone"
+        app:layout_constraintRight_toLeftOf="@+id/imgthree"
+        app:layout_constraintTop_toBottomOf="@+id/txtone" />
+
+    <ImageView
+        android:id="@+id/imgthree"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bb"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtone"
+        app:layout_constraintLeft_toRightOf="@+id/imgtwo"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/txt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Executive Officer"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/txttwo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/txt6"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        />
+    <TextView
+        android:id="@+id/txt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marketing"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/txttwo"
+        app:layout_constraintLeft_toRightOf="@+id/txt5"
+        app:layout_constraintRight_toLeftOf="@+id/txt7"
+        />
+    <TextView
+        android:id="@+id/txt7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Business Analyst"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/txtthree"
+        app:layout_constraintLeft_toRightOf="@+id/txt6"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/txttwo"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Adams G"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imgone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/txtthree"
+        app:layout_constraintHorizontal_chainStyle=""
+        />
+    <TextView
+        android:id="@+id/txtthree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Betty L"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imgtwo"
+        app:layout_constraintLeft_toRightOf="@+id/txttwo"
+        app:layout_constraintRight_toLeftOf="@+id/txtfour"
+        />
+    <TextView
+        android:id="@+id/txtfour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roberts"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imgthree"
+        app:layout_constraintLeft_toRightOf="@+id/txtthree"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+    <ImageView
+        android:id="@+id/imgfour"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/cc"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/imgfive"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        />
+
+    <ImageView
+        android:id="@+id/imgfive"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ee"
+        app:layout_constraintLeft_toRightOf="@+id/imgfour"
+        app:layout_constraintRight_toLeftOf="@+id/imgsix"
+        app:layout_constraintTop_toBottomOf="@+id/txt6" />
+
+    <ImageView
+        android:id="@+id/imgsix"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ff"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt7"
+        app:layout_constraintLeft_toRightOf="@+id/imgfive"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/txt11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UX Designer"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/txt8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/txt9"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        />
+    <TextView
+        android:id="@+id/txt12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Web Developer"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/txt9"
+        app:layout_constraintLeft_toRightOf="@+id/txt11"
+        app:layout_constraintRight_toLeftOf="@+id/txt13"
+        />
+    <TextView
+        android:id="@+id/txt13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Develop"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/txt9"
+        app:layout_constraintLeft_toRightOf="@+id/txt12"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/txt8"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Millwe W"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imgfour"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/txt9"
+        app:layout_constraintHorizontal_chainStyle=""
+        />
+    <TextView
+        android:id="@+id/txt9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kelven"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imgfive"
+        app:layout_constraintLeft_toRightOf="@+id/txt8"
+        app:layout_constraintRight_toLeftOf="@+id/txt10"
+        />
+    <TextView
+        android:id="@+id/txt10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roberts"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imgsix"
+        app:layout_constraintLeft_toRightOf="@+id/txt9"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <TextView
+        android:id="@+id/txt14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mission"
+        app:layout_constraintTop_toBottomOf="@+id/txt11"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt14"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Duls tells metus, elementum a lectus id,aliquet interdium mauris. Nam bibendumefficitur.Duls tells metus, elementum a lectus id,aliquet interdium mauris. Nam bibendumefficitur.Duls tells metus, elementum a lectus id,aliquet interdium mauris. Nam bibendumefficitur.Duls tells metus, elementum a lectus id,aliquet interdium mauris. Nam bibendumefficitur"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
